@@ -27,23 +27,51 @@ header p {
 
 main {
     padding: 2rem 1rem;
-    max-width: 900px;
+    max-width: 900px; /* Pertahankan max-width untuk konten utama */
     margin: 2rem auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    /* Hapus padding, margin-bottom, box-shadow dari .info-card agar tidak duplikat di plant-slide */
 }
 
-.info-card {
+/* Hapus atau modifikasi .info-card jika tidak lagi digunakan secara independen */
+/* .info-card {
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     text-align: center;
+} */
+
+
+/* === Gaya untuk Carousel === */
+#carousel-container {
+    display: flex;
+    overflow-x: auto; /* Memungkinkan scroll horizontal */
+    scroll-snap-type: x mandatory; /* Membuat slide "snap" ke posisi */
+    -webkit-overflow-scrolling: touch; /* Untuk scrolling yang lebih halus di iOS */
+    margin-bottom: 1rem;
+    /* Sembunyikan scrollbar bawaan untuk tampilan lebih rapi */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+#carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
-.info-card h2, .info-card h3 {
+.plant-slide {
+    flex: 0 0 100%; /* Setiap slide mengambil 100% lebar container */
+    scroll-snap-align: start; /* Posisi "snap" awal */
+    padding: 1.5rem; /* Padding internal slide */
+    border-radius: 8px;
+    box-shadow: none; /* Hapus shadow karena sudah di main */
+    text-align: center;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+}
+
+.plant-slide h2, .plant-slide h3 {
     color: #28a745;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -98,6 +126,34 @@ button:hover {
 .hidden {
     display: none;
 }
+
+/* === Gaya untuk Navigasi Tombol === */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem; /* Tambahkan padding agar tidak terlalu mepet tepi */
+}
+
+.nav-button {
+    background-color: #28a745; /* Warna hijau seperti header */
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex; /* Untuk menengahkan ikon dan teks */
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-button:hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+}
+
 
 footer {
     background-color: #333;
