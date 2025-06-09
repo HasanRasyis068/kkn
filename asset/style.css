@@ -2,14 +2,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #e5e0d8;
+    color: #2f4156;
     line-height: 1.6;
 }
 
 header {
-    background-color: #28a745; /* Hijau cerah */
-    color: white;
+    background-color: #2f4156; /* Hijau cerah */
+    color: #e5e0d8;
     padding: 2rem 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -29,7 +29,7 @@ main {
     padding: 2rem 1rem;
     max-width: 900px; /* Pertahankan max-width untuk konten utama */
     margin: 2rem auto;
-    background-color: #fff;
+    background-color: #e5e0d8;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     /* Hapus padding, margin-bottom, box-shadow dari .info-card agar tidak duplikat di plant-slide */
@@ -72,7 +72,7 @@ main {
 }
 
 .plant-slide h2, .plant-slide h3 {
-    color: #28a745;
+    color: #bf6d00;
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -96,19 +96,19 @@ ul {
 }
 
 ul li {
-    background-color: #e6ffee; /* Latar belakang list item */
+    background-color: #f7f3ed; /* Latar belakang list item */
     margin-bottom: 0.8rem;
     padding: 0.8rem 1rem;
-    border-left: 5px solid #28a745; /* Border kiri */
+    border-left: 5px solid #88895b; /* Border kiri */
     border-radius: 4px;
 }
 
 .highlight {
-    color: #007bff; /* Warna biru untuk highlight */
+    color: #bf6d00; /* Warna biru untuk highlight */
 }
 
 button {
-    background-color: #007bff; /* Biru cerah */
+    background-color: #88895b; /* Biru cerah */
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -120,7 +120,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Biru lebih gelap saat hover */
+    background-color: #6a6b41; /* Biru lebih gelap saat hover */
 }
 
 .hidden {
@@ -137,8 +137,8 @@ button:hover {
 }
 
 .nav-button {
-    background-color: #28a745; /* Warna hijau seperti header */
-    color: white;
+    background-color: #2f4156; /* Warna hijau seperti header */
+    color: #e5e0d8;
     padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 5px;
@@ -151,13 +151,13 @@ button:hover {
 }
 
 .nav-button:hover {
-    background-color: #218838; /* Hijau lebih gelap saat hover */
+    background-color: #1e2a3a; /* Hijau lebih gelap saat hover */
 }
 
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #bf6d00;
+    color: #e5e0d8;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
